@@ -13,6 +13,11 @@ public class SpringDockerDemoApplication {
 	{
 		return "welcome to spring docker demo";
 	}
+	@GetMapping("/show")
+	public String showing()
+	{
+		return "executing docker container";
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringDockerDemoApplication.class, args);
